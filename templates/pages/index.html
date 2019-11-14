@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %} | Welcome {% endblock %}
+
+{% block content %}
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="content mt-3">
+    <div class="col-sm-12 mb-4">
+        <div class="card-group">
+
+            <div class="card col-lg-2 col-md-6 no-padding no-shadow">
+                <div class="card-body bg-flat-color-2">
+                    <div class="h1 text-muted text-right mb-4">
+                        <i class="fa fa-user-plus text-light"></i>
+                    </div>
+                    <div class="h4 mb-0 text-light">
+                        <span class="count">385</span>
+                    </div>
+                    <small class="text-uppercase font-weight-bold text-light">Seafarers Registered</small>
+                    <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 no-padding no-shadow ">
+                <div class="card-body bg-flat-color-1">
+                    <div class="h1 text-muted text-right mb-4">
+                        <i class="fa fa-certificate text-light"></i>
+                    </div>
+
+                    <div class="h4 mb-0 text-light">
+                        <span class="count">87500</span>
+                    </div>
+                    <small class="text-uppercase font-weight-bold text-light">Certificates Rendered</small>
+                    <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
+                </div>
+            </div>
+
+            <div class="card col-lg-2 col-md-6 no-padding no-shadow">
+                <div class="card-body bg-flat-color-5">
+                    <div class="h1 text-right text-light mb-4">
+                        <i class="fa fa-check-square"></i>
+                    </div>
+                    <div class="h4 mb-0 text-light">
+                        <span class="count">2800</span>
+                    </div>
+                    <small class="text-uppercase font-weight-bold text-light">Certificates Validated</small>
+                    <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Validate Certificate</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content mt-3">
+
+
+
+
+    <div class="search">
+        <form action="{% url 'search' %}">
+            <!-- Form Row 1 -->
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label class="sr-only">Full Name</label>
+                    <input type="text" name="full_name" class="form-control" placeholder="Full Name">
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label class="sr-only">Date of Birth</label>
+                    <input type="text" name="date_of_birth" id="datepicker" class="form-control"
+                        placeholder="Date of Birth">
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <label class="sr-only">Certificate Number</label>
+                    <input type="text" name="certificate_code" class="form-control" placeholder="Certificate Number">
+                </div>
+            </div>
+
+            <button class="btn btn-secondary btn-block  mt-4" type="submit">Search</button>
+        </form>
+        <p><br /><br /><br /><br /> </p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block title %} | Search Results {% endblock %}
+
+{% block content %}
+<div class="listing-heading text-center">
+
+    <p>
+        <i class="fas fa-map-marker text-secondary"></i> {{ SeafarerCertificates.certificate_code }}
+    </p>
+</div>
+{% endblock %}
