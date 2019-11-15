@@ -1,0 +1,12 @@
+
+colorama==0.4.1
+Django==2.2.7
+mysql-connector-python==8.0.18
+numpy==1.17.4
+opencv-python==4.1.2
+Pillow==6.2.1
+protobuf==3.10.0
+pyzbar==0.1.8
+
+sqlparse==0.3.0
+
